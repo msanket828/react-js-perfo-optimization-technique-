@@ -1,6 +1,7 @@
 import React from "react";
 
 const Count = (props) => {
+  console.log(props.text+' Running');
   return (
     <div className="count" style={{ margin: "10px" }}>
       <h2>
@@ -10,4 +11,4 @@ const Count = (props) => {
   );
 };
 
-export default Count;
+export default React.memo(Count);
