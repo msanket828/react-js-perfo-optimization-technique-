@@ -6,16 +6,15 @@ import Header from "./components/Header/Header";
 
 function App() {
   const [age, setAge] = useState(25);
-  const [salary, setSalary] =useState(25000);
-  console.log('App running');
+  const [salary, setSalary] =useState(25000);  
 
   const handleIncrementAge=useCallback(()=> {
-    setAge((prevAge)=> prevAge + 5);
+    setAge(age + 5);
   },[age]);
   
 
   const handleIncrementSalary=useCallback(()=> {
-    setSalary((prevSal)=> prevSal + 5000);
+    setSalary(salary + 5000);
   },[salary]);
 
 
